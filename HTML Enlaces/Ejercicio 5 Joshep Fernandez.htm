@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Videojuegos</title>
+</head>
+<body>
+    <center>
+        <h1>Mapa de Géneros de Videojuegos</h1>
+    </center>
+
+    <img src="Figuras .jpg" usemap="#mapa-videojuegos" alt="Mapa de Videojuegos" width="950" height="200">
+
+    <map name="mapa-videojuegos">
+        <!-- Triángulo -->
+        <area shape="poly" coords="106,31, 310,177, 106,177" href="http://127.0.0.1:5500/Juegos%20Deportivos.html" alt="Videojuegos Deportivos">
+        
+        <!-- Círculo (simulado como rectángulo) -->
+        <area shape="rect" coords="314,32, 486,177" href="http://127.0.0.1:5500/VideoJuegos%20De%20Accion.htm" alt="Videojuegos de Acción">
+        
+        <!-- Aspa -->
+        <area shape="poly" coords="522,34, 694,175, 694,34, 522,175" href="http://127.0.0.1:5500/VideoJuegos%20Arcade.htm" alt="Videojuegos Arcade">
+        
+        <!-- Cuadrado (ajustado para ser más pequeño) -->
+        <area shape="rect" coords="725,33, 872,174" href="http://127.0.0.1:5500/Video%20Juegos%20Rol.html" alt="Videojuegos de Aventuras / Rol">
+    </map>
+  
+</body>
+</html>

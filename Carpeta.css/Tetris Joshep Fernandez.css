@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    background-image: url("Imagenes/Arcade\ Fondo.jpg") ; 
+    color: rgb(241, 234, 234);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    border-collapse: separate;
+    margin-bottom: 20px;
+}
+
+.board .cell {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.cell.gray { background-color: rgb(215, 209, 209);
+border:rgb(215, 209, 209) outset 5px;  }
+.cell.yellow { background-color: yellow; 
+border: yellow outset 5px;}
+
+.cell.purple { background-color: purple;
+border: purple outset 5px; }
+
+.cell.red { background-color: red; 
+border: red outset 5px;}
+
+.cell.blue { background-color: blue; 
+border: blue outset 5px;}
+
+.cell.lime { background-color: rgb(102, 251, 102); 
+border: rgb(102, 251, 102) outset 5px;}
+
+.cell.naranja {background-color: #FFA07A; 
+border: #FFA07A outset 5px;}
+
+.cell.azul-celeste {background-color: #87CEEB;
+border: #87CEEB outset 5px;}
+
+.cell.orange {background-color: orange;
+border: orange outset 5px;}
+
+.score {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.next-piece {
+    margin-top: 20px;
+}
+
+.next-piece table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.next-piece .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+}
+.invisible {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.align-left {text-align:left;
+    padding-left: 10px;
+}
+.cell {
+    font-size: 24px;
+}
+
+
+
+  
+  
+  
+
+
+

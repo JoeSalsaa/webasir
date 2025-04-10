@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="Tetris Joshep Fernandez.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">TETRIS</h1>
+        <div class="game">
+            <table class="board" border="0px">
+                <body> 
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td id="level" class="cell invisible" colspan="4">LEVEL:4</td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell invisible"></td></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cellinvisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td id="score" class="cell invisible" colspan="4">10542</td>
+                        
+                        <td class="cell gray"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell yellow"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell purple"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell gray"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell blue"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell lime"></td>
+                        <td class="cell invisible"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell orange"></td>
+                        <td class="cell azul-celeste"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                        <td class="cell gray"></td>
+                    </tr>
+            
+</body>
+</html>
+

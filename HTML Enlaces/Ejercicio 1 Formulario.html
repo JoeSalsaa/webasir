@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario_registro.html</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form method="GET" action="mailto:raul.rodriguez@universidadeuropea.es">
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="50" required>
+        <br><br>
+
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="50" required>
+        <br><br>
+
+        
+        <label>Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label>
+        <br><br>
+
+        
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+
+        
+        <label for="poblacion">Población:</label>
+        <select id="poblacion" name="poblacion">
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="valencia">Valencia</option>
+        </select>
+        <br><br>
+
+        
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="5" cols="40"></textarea>
+        <br><br>
+
+        
+        <input type="checkbox" id="informacion" name="informacion" checked>
+        <label for="informacion">Deseo recibir información sobre novedades y ofertas</label>
+        <br><br>
+
+        
+        <input type="checkbox" id="aceptar" name="aceptar" required>
+        <label for="aceptar">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        <br><br>
+
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

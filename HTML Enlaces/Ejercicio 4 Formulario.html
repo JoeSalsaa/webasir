@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Usuario</title>
+</head>
+
+<body bgcolor="#f5f5f5" text="#000000">
+    <h1 align="center">
+        Formulario de Alta de Usuario
+    </h1>
+    <form method="POST" action="mailto:raul.rodriguez@universidadeuropea.es" enctype="text/plain">
+        <table width="700" align="center" bgcolor="#ffffff" cellpadding="20" border="1" bordercolor="#cccccc">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend><strong>Datos Personales</strong></legend> <label
+                            for="nombre"><strong>Nombre:</strong></label><br> <input type="text" id="nombre"
+                            name="nombre" required maxlength="50" size="50"><br><br>
+                        <label for="apellido1"><strong>Primer Apellido:</strong></label><br>
+                        <input type="text" id="apellido1" name="apellido1" required maxlength="50" size="50"><br><br>
+
+                        <label for="apellido2"><strong>Segundo Apellido:</strong></label><br>
+                        <input type="text" id="apellido2" name="apellido2" maxlength="50" size="50"><br><br>
+
+                        <label for="direccion"><strong>Dirección Postal:</strong></label><br>
+                        <textarea id="direccion" name="direccion" rows="3" required cols="50"></textarea><br><br>
+
+                        <label for="cp"><strong>Código Postal:</strong></label><br>
+                        <input type="text" id="cp" name="cp" required pattern="\d{5}" maxlength="5" placeholder=""
+                            size="50"><br><br>
+
+                        <label for="poblacion"><strong>Población:</strong></label><br>
+                        <input type="text" id="poblacion" name="poblacion" required maxlength="50" size="50"><br><br>
+
+                        <label for="provincia"><strong>Provincia:</strong></label><br>
+                        <input type="text" id="provincia" name="provincia" required maxlength="50" size="50"><br><br>
+
+                        <label for="pais"><strong>País:</strong></label><br>
+                        <input type="text" id="pais" name="pais" required maxlength="50" size="50"><br><br>
+
+                        <label for="edad"><strong>Edad:</strong></label><br>
+                        <select id="edad" name="edad" required>
+                            <option value="" disabled selected>Seleccionar franja de edad</option>
+                            <option value="18-20">18-20</option>
+                            <option value="21-23">21-23</option>
+                            <option value="24-26">24-26</option>
+                            <option value="27-30">27-30</option>
+                            <option value="31-40">31-40</option>
+                            <option value="41-50">41-50</option>
+                            <option value="51-60">51-60</option>
+                            <option value="61-99">61-99</option>
+                        </select><br><br>
+
+                        <label for="fecha_nacimiento"><strong>Fecha de Nacimiento:</strong></label><br>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+                        <label><strong>Sexo:</strong></label><br>
+                        <input type="radio" id="hombre" name="sexo" value="Hombre" required>
+                        <label for="hombre">Hombre</label><br>
+                        <input type="radio" id="mujer" name="sexo" value="Mujer" required>
+                        <label for="mujer">Mujer</label><br><br>
+
+                        <label for="estudios"><strong>Estudios:</strong></label><br>
+                        <select id="estudios" name="estudios[]" multiple required>
+                            <option value="Sin Estudios">Sin Estudios</option>
+                            <option value="ESO">ESO</option>
+                            <option value="Bachillerato">Bachillerato</option>
+                            <option value="Grado Medio">Grado Medio</option>
+                            <option value="Grado Superior">Grado Superior</option>
+                            <option value="Prueba de Acceso">Prueba de Acceso</option>
+                            <option value="Grado">Grado</option>
+                            <option value="Master">Master</option>
+                            <option value="Doctorado">Doctorado</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><strong>Datos de Alta Usuario</strong></legend>
+                        <label for="email"><strong>Correo Electrónico:</strong></label><br>
+                        <input type="email" id="email" name="email" required size="50"><br><br>
+
+                        <label for="password"><strong>Contraseña:</strong></label><br>
+                        <input type="password" id="password" name="password" minlength="8" required size="50"><br><br>
+
+                        <label for="confirm_password"><strong>Confirmar Contraseña:</strong></label><br>
+                        <input type="password" id="confirm_password" name="confirm_password" minlength="8" required
+                            size="50"><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><strong>Otros</strong></legend>
+                        <label for="aficiones"><strong>Aficiones:</strong></label><br>
+                        <textarea id="aficiones" name="aficiones" rows="3" cols="50"></textarea><br><br>
+
+                        <label><strong>Carné de Conducir:</strong></label><br>
+                        <input type="radio" id="carnet_si" name="carnet" value="Sí" required>
+                        <label for="carnet_si">Sí</label><br>
+                        <input type="radio" id="carnet_no" name="carnet" value="No" required>
+                        <label for="carnet_no">No</label>
+                    </fieldset>
+                    <br>
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                    <label for="condiciones">Acepto los términos y condiciones</label><br><br>
+
+                    <input type="submit" value="Enviar" bgcolor="#008000">
+                    <input type="reset" value="Restablecer" bgcolor="#ff0000">
+                </td>
+            </tr>
+            <div align="center">
+        </table>
+    </form>

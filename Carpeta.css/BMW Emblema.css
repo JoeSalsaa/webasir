@@ -1,0 +1,60 @@
+body {
+    background-image: url(Imagenes/bmw.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(247, 244, 244);
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid black;
+    border-spacing: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+td {
+    width: 50%;
+    height: 50%;
+    padding: 0;
+}
+
+.blanco {
+    background-color: rgb(253, 253, 253);
+    border-top-left-radius: 100%;
+}
+
+.blue {
+    background-color: rgb(41, 1, 201);
+    border-top-right-radius: 100%;
+}
+
+.azul {
+    background-color: rgb(9, 9, 215);
+    border-bottom-left-radius: 100%;
+}
+
+.white {
+    background-color: rgb(237, 234, 234);
+    border-bottom-right-radius: 100%;
+}
+
+
